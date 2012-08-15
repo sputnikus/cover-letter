@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title%}Martin hledá práci{% endblock %}
+{% block body %}
+    <div class="three columns sidebar">
+        <nav>
+            <h3 id="logo">Martin Putniorz</h3>
+            <ul>
+                <li><a href="#Who">Kdo</a></li>
+                <li><a href="#What">Co umí</a></li>
+                <li><a href="#Where">Co dělal</a></li>
+                <li><a href="#Want">Co chce</a></li>
+            </ul>
+        </nav>
+        &nbsp;
+    </div>
+    <div class="twelve columns offset-by-one content">
+        <header>
+            <h1>Martin Putniorz hledá práci</h1>
+            <h5>A pokud hledáte někoho jako on, jste tu správně</h5>
+        </header>
+        <hr class="large"/>
+        <div class="doc-section" id="Who">
+            <h3>Kdo to je?</h3>
+            <p>Martin Putniorz <em>[putňoř]</em> je v současné době Python vývojář na volné noze. Mezi jeho speciality patří:</p>
+            <ul class="square">
+                <li>
+                    <h5>Znalost Pythonu</h5>
+                    <p>V Pythonu programuje už 5 let. To není moc, ale taky to není zrovna málo (na jeho věk). Za tu dobu už vyzkoušel hodně různých <a href="#What">aspektů</a> programování.</p>
+                </li>
+                <li>
+                    <h5>Touha učit se něco nového</h5>
+                    <p>Každý je dneska "ochotný" se naučit něco nového. Méně lidí <strong>touží</strong> studovat nové technologie, postupy a metodiky. Martin je jedním z těch toužících. Třeba právě teď se ponořil do studia <a href="http://www.erlang.org/" target="_blank">Erlangu</a>.</p>
+                </li>
+                <li>
+                    <h5>Schopnost myslet analyticky a <em>jinak</em></h5>
+                    <p>Doposud byl Martin nasazován především na projekty, v nichž bylo potřeba analyzovat stávající řešení a vymyslet nové, lepší a výkonnější. Také byl nasazován na projekty, jejíž zadání ještě nikdo neřešil a které proto potřebovaly zcela originální řešení (především se jednalo o problematiku zpracování dat).</p>
+                </li>
+            </ul>
+        </div>
+        <hr />
+        <div class="doc-section" id="What">
+            <h3>Co umí a používá?</h3>
+            <p>Jeho hlavním nástrojem je <strong>Python</strong>. Často ho spojuje s používáním <a href="https://github.com/sputnikus/postgres_barcamp" target="_blank">PostgreSQL</a>, Djanga nebo Flasku. Poslední dobou se ponořil do <a href="http://www.gevent.org/" target="_blank">událostmi řízeného programování</a>.</p>
+            <p>Martin má široké znalosti na poli SQL i NoSQL úložišť - vedle Postgresu použil nebo používá MySQL, Redis, Riak a CouchDB.</p>
+            <p>Během své dosavadní praxe se setkal i s dalšími technologiemi, např. vyvíjel <a href="https://accounts.legadino.com/" target="_blank">oAuth providera</a>, GUI aplikaci nebo fulltextový vyhledávač.</p>
+            <p>Samozřejmě, jako každý programátor, má i Martin nástroje, které při práci preferuje. Především vše vyvíjí v Linuxu za pomocí editoru Sublime Text 2, jako webový server většinou používá kombinaci gunicornu a nginexu. Své výtvory verzuje gitem a ovládá fabricem.</p>
+        </div>
+        <hr />
+        <div class="doc-section" id="Where">
+            <h3>Co doteď dělal?</h3>
+            <p>Kompletní soupis jeho zaměstnavatelů a vzdělání naleznete na <a href="http://zerp.ly/sputnikus" target="_blank">Zerply</a></p>
+            <p>Většina Martinovi práce je licencována restriktivně a nikdy nebyla zpřístupněna pro širokou veřejnost (jednalo se o interní systémy) a tak jediným jeho veřejně dostupným projektem je v současné době oAuth provider <a href="https://accounts.legadino.com/" target="_blank">Accounts</a> vyvinutý pro firmu <a href="http://www.michaljanik.cz/" target="_blank">Michaljanik.cz</a></p>
+            <p>Co se týče vlastních projektů, většina je přístupná na jeho <a href="https://github.com/sputnikus" target="_blank">GitHubu</a></p>
+        </div>
+    </div>
+{% endblock %}
