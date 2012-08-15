@@ -1,1 +1,73 @@
-[putɲor̝]
+{% extends "base.html" %}
+{% block title%}Martin's looking for a job{% endblock %}
+{% block body %}
+    <div class="three columns sidebar">
+        <nav>
+            <h3 id="logo">Martin Putniorz</h3>
+            <ul>
+                <li><a href="#Who">Who</a></li>
+                <li><a href="#What">What can he do</a></li>
+                <li><a href="#Where">What he did</a></li>
+                <li><a href="#Want">What he wants</a></li>
+                <li><a href="#All">Contact</a></li>
+            </ul>
+        </nav>
+        &nbsp;
+    </div>
+    <div class="twelve columns offset-by-one content">
+        <header>
+            <h1>Pythoneer's looking for a job</h1>
+            <h5>And if you are looking for someone like him, you are in the right place</h5>
+        </header>
+        <hr class="large"/>
+        <div class="doc-section" id="Who">
+            <h3>Who is he?</h3>
+            <p>Martin Putniorz <em>[putɲor̝]</em> is currently freelance Python developer. His specialties include:</p>
+            <ul class="square">
+                <li>
+                    <h5>Knowledge of Python</h5>
+                    <p>He's programming in Python for 5 years. That's not much, but it's also not too little (considering his age). During that time he tried many different <a href="#What">aspects</a> of programming.</p>
+                </li>
+                <li>
+                    <h5>The desire to learn something new</h5>
+                    <p>Everyone today is "willing" to learn something new. Less people <strong>desire</strong> to study new technologies, procedures and methodologies. Martin is one of those aspiring. For example, now he immersed himself into studying <a href="http://www.erlang.org/" target="_blank">Erlang</a>.</p>
+                </li>
+                <li>
+                    <h5>Ability to think analytically and <em>differently</em></h5>
+                    <p>So far, Martin has been deployed mainly on projects in which it was necessary to analyze the existing solutions and invent new, better and more efficient. He was also deployed on projects that nobody did not address and therefore they needed a completely original solutions (especially in the case of data processing).</p>
+                </li>
+                <li>
+                    <h5>Willingness to share knowledge</h5>
+                    <p>He often speaks at <a href="http://www.pyvo.cz/" target="_blank">PyVo</a> group events. He was also chosen as one of the speakers at Barcamp Brno <a href="http://www.superlectures.com/barcampbrno2012/lecture.php?lang=cz&id=23" target="_blank">2012</a>.</p>
+                </li>
+            </ul>
+        </div>
+        <hr />
+        <div class="doc-section" id="What">
+            <h3>What can he do and what's he using?</h3>
+            <p>His main tool is <strong>Python</strong>. Often, he combines it with the use of <a href="https://github.com/sputnikus/postgres_barcamp" target="_blank">PostgreSQL</a>, Django or Flask (in which is also this site programmed). Recently he immersed himself in <a href="http://www.gevent.org/" target="_blank">event driven programming</a>.</p>
+            <p>Martin has a broad knowledge in the areas of SQL and NoSQL storages - in addition to Postgres he uses or used MySQL, Redis, Riak and CouchDB.</p>
+            <p>During his practice he met with other technologies, for example developed <a href="https://accounts.legadino.com/" target="_blank">OAuth provider</a>, GUI application or fulltext search.</p>
+            <p>Of course, like any programmer, Martin has tools that he prefers to work with. He's developing everything on Linux in Sublime Text 2 editor, as a web server he mostly uses combination of gunicorn and nginx. His creations are tracked by git and controled by fabric.</p>
+            <p>There are technologies, that he doesn't like too much. Namely it's Java, C++, PHP and XML</p>
+            <p>As for the other skills, these include native <a href="{{ url_for('czech') }}">Czech</a> language skills and advanced knowledge of English.</p>
+        </div>
+        <hr />
+        <div class="doc-section" id="Where">
+            <h3>What did he does until now?</h3>
+            <p>A complete list of his employers and education can be found at <a href="http://zerp.ly/sputnikus" target="_blank">Zerply</a>.</p>
+            <p>Most of Martin's work is strictly licensed and has never been made ​​available to the general public (they were an internal systems) and the only publicly available project is currently OAuth provider <a href="https://accounts.legadino.com/" target="_blank">Accounts</a> developed for <a href="http://www.michaljanik.cz/" target="_blank">Michaljanik.cz</a>.</p>
+            <p>As for his own projects, most of them are available on his <a href="https://github.com/sputnikus" target="_blank">GitHub</a>.</p>
+        </div>
+        <hr />
+        <div class="doc-section" id="Want">
+            <h3>What does he want!</h3>
+            <p>First of all, interesting work full of <strong>challenges</strong>. The corresponding <strong>salary</strong>. And finally, a good company <strong>background</strong>. Location does not matter because he is able to relocate if the offer is good.</p>
+        </div>
+        <hr />
+        <div class="doc-section" id="All">
+            <h3>How to contact him?</h3>
+            <p>Are you interested in Martin? If so, there is nothing easier than to write him an <a href="mailto:mputniorz@gmail.com">email</a> or contact him through other <a href="http://zerp.ly/sputnikus" target="_blank">channels</a></p>
+        </div>
+    </div>
+{% endblock %}
