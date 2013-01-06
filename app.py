@@ -5,7 +5,7 @@
     sputnikus is looking for work. This app serves templates on Heroku and
     others can use it, if they preserve LICENSE
 
-    :copyright: (c) 2012 by Martin 'sputnikus' Putniorz.
+    :copyright: (c) 2013 by Martin 'sputnikus' Putniorz.
     :license: BSD, see LICENSE for details.
 """
 import os
@@ -16,13 +16,13 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def czech():
-    return render_template('czech.html')
-
-
-@app.route('/en')
 def english():
     return render_template('english.html')
+
+
+@app.route('/cz')
+def czech():
+    return render_template('czech.html')
 
 
 if __name__ == '__main__':
